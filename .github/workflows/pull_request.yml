@@ -18,8 +18,8 @@ jobs:
       sleep 1.5m
       echo "Finished Code Build"
 
-- name: Test The Code
-  run: |
-    echo "Starting Testing"
-    sleep 1.5m
-    echo "Finished Testing"
+  - name: Test The Code
+    run: |
+      echo "Starting Testing"
+      sleep 1.5m
+      echo "Finished Testing"
