@@ -6,20 +6,21 @@ on:
       - main
 
 jobs:
-  name: Build and Test PR
+  build-and-test-on-pr:
+    name: Build and Test PR
 
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
+    steps:
 
-  - name: Build The Code
-    run: |
-      echo "Starting Code Build"
-      sleep 1.5m
-      echo "Finished Code Build"
+    - name: Build The Code
+      run: |
+        echo "Starting Code Build"
+        sleep 1.5m
+        echo "Finished Code Build"
 
-  - name: Test The Code
-    run: |
-      echo "Starting Testing"
-      sleep 1.5m
-      echo "Finished Testing"
+    - name: Test The Code
+      run: |
+        echo "Starting Testing"
+        sleep 1.5m
+        echo "Finished Testing"
