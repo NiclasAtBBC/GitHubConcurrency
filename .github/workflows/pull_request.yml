@@ -12,13 +12,13 @@ jobs:
 
   steps:
 
-  name: Build The Code
-  run: |
-    echo "Starting Code Build"
-    sleep 1.5m
-    echo "Finished Code Build"
+  - name: Build The Code
+    run: |
+      echo "Starting Code Build"
+      sleep 1.5m
+      echo "Finished Code Build"
 
-name: Test The Code
+- name: Test The Code
   run: |
     echo "Starting Testing"
     sleep 1.5m
