@@ -4,6 +4,10 @@ on:
   pull_request:
     branches: [main]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build-and-test-on-pr:
     name: Build and Test PR
@@ -15,11 +19,11 @@ jobs:
     - name: Build The Code
       run: |
         echo "Starting Code Build"
-        sleep 1.5m
+        sleep 1m
         echo "Finished Code Build"
 
     - name: Test The Code
       run: |
         echo "Starting Testing"
-        sleep 1.5m
+        sleep 1m
         echo "Finished Testing"
