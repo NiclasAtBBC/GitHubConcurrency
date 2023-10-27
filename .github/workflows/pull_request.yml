@@ -1,0 +1,25 @@
+name: Pull Request
+
+on:
+  pull_request
+    branches: 
+      - main
+
+jobs:
+  name: Build and Test PR
+
+  runs-on: ubuntu-latest
+
+  steps:
+
+  name: Build The Code
+  run: |
+    echo "Starting Code Build"
+    sleep 1.5m
+    echo "Finished Code Build"
+
+name: Test The Code
+  run: |
+    echo "Starting Testing"
+    sleep 1.5m
+    echo "Finished Testing"
